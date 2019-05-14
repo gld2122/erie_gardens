@@ -1,57 +1,300 @@
 \documentclass{article}
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber,authordate]{biblatex-chicago}
+\usepackage{graphicx}
 \usepackage[english]{babel}
+\usepackage{rotating}
 
-\title{Erie Gardens Mapping}
+\title{The growing-up of a World War II housing project: Erie Gardens, Port
+Clinton, Ohio}
 \author{Gabe DeFreitas}
 \date{\today}
 
-\addbibresource{references.bib}
+\addbibresource{ref.bib}
 \frenchspacing
 
 \begin{document}
 
 \maketitle
+\tableofcontents
 
 \section{Introduction}
 
-This paper pursues two historical mapping projects in the Erie Gardens
-subdivision of Port Clinton, Ohio, a town of about 6000 permanent residents
-located on the Lake Erie shoreline about halfway between Toledo and Cleveland.
-The Erie Gardens neighbourhood is a World War II-era federal housing project
-that was built to accommodate an influx of workers at a local ordnance works.
-After the war, the area was incorporated into the larger community of Port
-Clinton, although it soon gained a reputation as a slum due to the low-cost
-nature of its housing stock.
+In this paper, we present a historical analysis of community formation in the
+Erie Gardens subdivision of Port Clinton, Ohio, a city of population about six
+thousand lying halfway between Toledo and Cleveland on the Lake Erie shoreline.
+Erie Gardens was built by the federal government around World War II to
+accommodate the influx of workers at a local ordnance works. After the war, the
+area was incorporated into the surrounding fabric of Port Clinton and gained as
+a slum reputation due to the low-cost nature of its housing stock.
 
-The first part of this paper presents a historical map of Erie Gardens during
-its time as a federal housing project, presenting contemporary street names
-(which have since changed) and building locations drawn from municipal
-ordinances and newspaper research. In the second part, we look historically at
-three revitalisation efforts that took place in the neighbourhood in the 1960s,
-1980s, and 2000s. We follow up with a GIS plotting of property values in 1991
-and 2018 to determine what economic effects, if any, these revitalisations had
-on Erie Gardens. 
+After situating Erie Gardens within the historical context of World War II
+federal housing and prefabricated building techniques, we present the history
+of revitalisation efforts in the neighbourhood starting from the 1960s. We
+argue from this evidence that Erie Gardens became a vital \textit{community}
+despite its artificial beginnings and infrastructural and socioeconomic
+challenges. In fact, its unique character and history arguably account for the
+strength of the grassroots movement. This account is complemented by a
+historical map of Erie Gardens during the wartime period, based on primary
+sources. Besides depicting this information on a map for the first time, the
+map gives a sense of how Erie Gardens evolved over time and matured into a
+distinct neighbourhood.
 
 \section{Neighbourhood description}
 
-Erie Gardens is a []-acre subdivision of Port Clinton built around 1941 to
-house workers at the Erie Ordnance Depot about one mile northwest at the
-present site of Erie Industrial Park. In the 2010 census, the area had a
-population of about 518 residents \parencite{2010census} living in about 220
-housing units \parencite{3-85}. Erie Gardens is bounded by West Third Street to
-the north, Fremont Road to the south, Wilson Avenue to the east, and Port
-Clinton's municipal boundary to the west (Figure 1). Most of the housing stock
-consists of prefabricated longhouses divided up into one or two apartment
-units. The street grid is highly irregular and has streets named after minor
-presidents, states, and Great Lakes. Its local reputation as a slum derives
-from the low-cost nature of its housing combined with its isolated position
-within Port Clinton's larger city fabric (Figure 2). Despite the reputation,
-many Erie Gardens residents report a positive view of their neighborhood, as
-Terry Witter expressed in the \textit{Port Clinton News Herald}: ``Maybe there
-was a stigma there, but I didn't feel any of that. It was just a wonderful
-place to grow up.'' \parencite{trusty18}
+\begin{figure}[h]
+	\caption{Aerial view of Erie Gardens \parencite{ott-auditor}}
+	\centering
+	\includegraphics[scale=0.5]{images/eg_aerial.jpg}
+\end{figure}
+
+Erie Gardens is a subdivision of Port Clinton, Ohio built around 1941 to house
+workers at the Erie Ordnance Depôt about one mile to the northwest of Port
+Clinton at the present site of Erie Industrial Park. In the 2010 census, the
+area had a population of about 518 residents \parencite{2010census} living in
+about 220 housing units \parencite{mar85}. Erie Gardens is bounded by West
+Third Street to the north, Fremont Road to the south, Wilson Avenue to the
+east, and Port Clinton's municipal boundary to the west. Most of the housing
+stock consists of prefabricated longhouses divided up into two or three
+apartment units. The street grid is highly irregular with some of the
+``streets'' being little more than sidewalks. Port Clinton housing advocate
+Linda Hartlaub noted in 1988 article that ``people didn't want to live there.
+It was considered the slum of Port Clinton'' \parencite{murray88}. Negative
+local attitudes toward Erie Gardens derive from the low-cost nature of its
+housing and infrastructure combined with its isolated position within Port
+Clinton's city fabric. Despite the attitudes, many Erie Gardens residents
+report a positive view of their neighborhood, as childhood resident Terry
+Witter expressed to the \textit{Port Clinton News Herald}: ``Maybe there was a
+stigma there, but I didn't feel any of that. It was just a wonderful place to
+grow up'' \parencite{trusty18}. We will see how Erie Gardens' unique position
+within Port Clinton prompted a strong tradition of grassroots organisation
+beginning in 1969, although first we must place the neighbourhood's
+construction in the larger context of World War II factory housing.
+
+\section{World War II federal housing construction}
+
+The rapid resumption of industrial activity prompted by World War II created
+massive housing shortages in the United States as workers flocked to factory
+towns to participate in the war effort and reviving economy. As
+\textcite[9-10]{marks12} notes, ``the total wartime migration between 1941 and
+1945 exceeded 30 million people, or one-fifth of the nation's population\ldots
+the urgent need for housing\ldots to accommodate the large influx of factory
+workers resulted in the construction of units of simplified design which
+incorporated a minimum amount and variation of materials that could be
+assembled rapidly and cheaply''. This ``rationalised'' housing was composed of
+prefabricated sheets of such materials as concrete, plywood, composition board,
+gypsum, and Cemesto \parencite[19]{marks12}. The resulting units are low-lying
+and horizontally oriented structures (see \ref{fig:block}) with simple interior
+plans.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{images/eg_house_aerial.jpg}
+	\caption{Aerial of a typical Erie Gardens block \parencite{ott-auditor}}
+	\label{fig:block}
+\end{figure}
+
+Builder Albert Farwell Bemis proposed three tenets for the rational house:
+simplify by eliminating specialised spaces in favour of open floor plans;
+``streamline the construction process''; and apply industrial management to
+build economies of scale into the supply chain \parencite[16]{marks12}.
+\textcite{marks12} argues that the rationalisation of housing became more
+acceptable during this time due to the wartime housing emergency, setting
+apattern for the suburban housing boom of the 1950s. To borrow another quote
+from Erie Gardens resident Terry Witter, ``they weren't made too luxuriously.
+We all had the same kind of living conditions'' \parencite{trusty18}. (See
+\ref{fig:house})
+
+Although prefabricated housing suited the immediate needs of the war, there was
+concern even at the time that concentrations of low-quality housing could
+develop into slums after wartime production subsided \parencite[13]{marks12}.
+John Blandford, who became National Housing Administrator in 1943, pushed back
+against the original plan to dismantle all emergency housing within two years
+of the war's end. Although this plan intended to avoid the development of
+slums, Blandford recognised its wastefulness and instead arranged to assist
+postwar homeowners in upgrading the housing to better materials
+\parencite{marks12}.
+
+Even though many World War II housing projects, including Erie Gardens and
+nearby MacArthur Park in Sandusky, Ohio would ultimately develop into
+low-income districts, Blandford's plan recognised the value of wartime housing
+projects and their capacities to grow into full-fledged neighbourhoods after
+the war. Indeed, following the end of the war the \textit{Sandusky Register}
+announced that ``the Public Housing Authority plans to dispose of the Erie
+Gardens Housing project\ldots several methods are being considered for disposal
+of the project, one of which would give the present tenants first chance to buy
+individual units'' \parencite{jun55}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.53]{images/eg_longhouse2.jpg}
+	\caption{Representative Erie Gardens prefab house \parencite{defreitas}}
+	\label{fig:house}
+\end{figure}
+
+\section{Community building and revitalisation}
+
+The substandard quality of Erie Gardens' housing stock was recognised by the
+end of the 1960s, barely 20 years after the neighbourhood's construction in
+1941. The \textit{Sandusky Register} reported on 14 March 1969 the formation of
+the Community Action Commission (CAC) for Erie Gardens, sponsored by the Office of
+Economic Opportunity in the context of the War on Poverty. The headline
+announced ``Gripes Voiced In PC'' and marked the beginning of Erie Gardeners'
+recognition of their unique challenges, shared destiny, and need for grassroots
+advocacy \parencite{14mar69}. Residents at the meeting vented a long list of
+complaints with living in the neighbourhood, including a lack of recreational
+opportunities, poor maintenance of streets, poor housing maintenance by
+absentee landlords, inadequate trash collection, discrimination, and inadequate
+drainage systems.
+
+The organising meeting of CAC inaugurated a tradition of grassroots
+organisation in Erie Gardens that continues to the present day. Shortly after
+the initial meeting, CAC garnered interest and held several meetings for the
+establishment of a neighbour's credit union, citing ``numerous complaints that
+loans are difficult to get for housing improvements for the Garden units''
+\parencite{25apr69}. Promoters of the credit union were aware of the step they
+were taking toward self-sufficiency and financial independence. The
+\textit{Register} reported that ``the meeting was successful, not only because
+of the enthusiasm it created, but because it was attended by some thirty
+people. One member stressed the fact that they would be on their own, grouped
+together in a common bond, helping one another'' \parencite{25apr69}. Around
+the same time, CAC noted that they had successfully lobbied the Port Clinton
+City School District to provide playground equipment at the Erie Gardens
+kindergarten property (today the school bus depôt) and that CAC would sponsor
+local adult education, allowing residents to work toward a high school degree
+equivalent \parencite{11apr69}.
+
+\begin{figure}[h]
+	\caption{Community church \parencite{defreitas}}
+	\centering
+	\includegraphics[scale=0.07]{images/church.jpg}
+\end{figure}
+
+Yet the formation of CAC indicated that Erie Gardens, for better or worse, was
+situated \textit{outside} the Port Clinton mainstream. Resident Sammie
+Yarborough raised the issue at a 27 March 1969 meeting by stating: ``This is
+all city business which you can take to City Councilmen. I thought the purpose
+of the CAC was for community self help by helping each other. What about
+education, job training, things the city cannot provide?'' Her insight is
+relevant because the CAC actually took on two roles, providing local support of
+the kind Yarborough describes, but serving as an advocacy group on behalf of
+Erie Gardens with the local power centres like Port Clinton City Council and
+Port Clinton City Schools. Conditions in Erie Gardens were inadequate
+\textit{because} the city had neglected its young neighbourhood.  Even the
+neighbourhood credit union was only a necessity because of lending
+discrimination by area banks. ``The credit union, if it could be gotten off the
+ground, might be the best way for community self help'', noted Lynn Nichols at
+the same meeting. \parencite{28mar69}.
+
+By the 1970s, although momentum for the credit union had fizzled out to no
+avail, CAC's organising had placed Erie Gardens back on City Council's
+political agenda. At this time, direct federal involvement in community
+planning was waning and being replaced by the devolved system of Community
+Development Block Grants (CDBG), which gave more discretion to local
+communities. The stage was set for an institutional push at City Hall for the
+health of a newly vocal Erie Gardens. The city government collaborated with
+Wood-Sandusky-Ottawa-Seneca Community Action Commission (WSOS) to gain CDBG
+funds on behalf of the neighborhood for housing and water line rehabilitation.
+
+The \textit{Register} reported in September 1975 that Port Clinton had applied
+for funding for street resurfacing and construction of a parking lot at
+Superior Court \parencite{eaton75}. By June 1980, Mayor John Fritz was calling
+for a city-sponsored report on needs in Erie Gardens that ``might eventually be
+incorporated into a full-scale redevelopment plan'' \parencite{jun80}. Fritz
+noted many of the issues which had aroused residents at the 1969 meeting,
+namely water lines, sewer lines, deteriorating buildings, and limited parking.
+The city government and WSOS actively pursued grants during the 1980s, finally
+receiving a \$655,000 Small Cities block grant in summer 1984 after two
+unsuccessful applications. An additional \$125,000 was tacked on that fall
+\parencite{smith84}. The money was distributed to property owners through a
+combination of direct grants and no-interest or low-interest loans, depending
+on income, including protections for low-income tenants to ensure that they
+would not be pushed out after landlords rehabilitated their buildings
+\parencite{mar85}. After the program had been carried out, housing advocate
+Linda Hartlaub noted in 1988 that people were already noticing the difference
+of revitalisation efforts \parencite{murray88}.
+
+Today Erie Gardens retains its distinct character and tradition of neighbourly
+coöperation. In the late 2000s, the West End Conestoga group was founded by a
+coalition of the Mental Health and Recovery Board, Ottawa County United Way,
+City of Port Clinton, and Erie Gardens residents to promote development in the
+neighbourhood with an emphasis on social well-being. The name ``West End''
+reflects the group's effort to rebrand the area and remove the negative
+connotations associated with the name ``Erie Gardens''. This name is also
+featured in the West End Community Park, the descendant of CAC's 1969
+playground equipment, which was extensively remodelled during the
+administration of Mayor Vince Leone (2011--2015), including all-new basketball
+courts.
+
+\section{Historical GIS Methodology}
+
+The map presented here (Figure \ref{fig:oldmap} depicts the original street
+names and some community locations in Erie Gardens. The old street names are
+found in Port Clinton ordinance 33-56 of September 25, 1956, around the time of
+Erie Gardens' annexation by the city \parencite{pc-code}. The ordinance changed
+the makeshift names of a federal housing project (``A Street'', ``B Street'',
+``West Loop Service Drive'') into real placenames, drawing from categories such
+as presidents (``Hoover Drive'', ``Polk Drive''), Great Lakes (``Erie Court'',
+``Superior Court''), and US states (``Maryland Street'', ``Ohio Street''). Erie
+Gardens is also notable in Port Clinton for its ``named sidewalks'' (see
+\ref{fig:sidewalk}) between Portage and Harding Drives. These paths were
+originally lettered as A Street, B Street, C Street, D Street, and E Street.
+The ordinance gave them a homier touch, opting for Abbey Lane, Bataan Lane,
+Concord Lane, Delaware Lane, and Edison Lane.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.53]{images/sidewalk.jpg}
+	\caption{One of Erie Gardens' named sidewalks viewed from Portage Drive
+	\parencite{defreitas}}
+	\label{fig:sidewalk}
+\end{figure}
+
+Although the vast majority of Erie Gardens consists of residential units, we
+depict some community structures on the south end of the neighbourhood,
+directly off of Fremont Road. These buildings and lots were repurposed over
+time. Community Lot A, the present site of West End Community Park, was
+adjacent to the Erie Gardens Kindergarten building, which today serves as the
+Port Clinton City School District's bus depôt. Community Lot B was the adjacent
+land across Portage Drive to the east and contained the Erie Gardens
+Administration Building. This was later repurposed into the administrative
+building for the Port Clinton Board of Education \parencite{nov61}. It served
+this purpose until the construction of Port Clinton's new middle school in
+2012. The community lot names from the Erie Gardens' plat are found on the
+Ottawa County Auditor's Office interactive map \parencite{ott-auditor}. Also
+noted on my map parking area off Superior Court funded by the city in the 1970s
+in response to resident complaints \parencite{eaton75}.
+
+The base vector data and current street map was imported from OpenStreetMap
+\parencite{osm}. I manually added the historical names, buildings, and areas
+using QGIS \parencite{qgis}. The raster background comes from the ArcGIS tile
+server.
+
+\begin{sidewaysfigure}
+	\includegraphics[scale=0.47]{images/oldmap.png}
+	\caption{Map of Erie Gardens circa World War II (own work)}
+	\label{fig:oldmap}
+\end{sidewaysfigure}
+
+\begin{figure}[h]
+	\caption{Modern street map of Erie Gardens (West End) \parencite{osm}}
+	\centering
+	\includegraphics[scale=0.5]{images/newmap.png}
+\end{figure}
+
+\section{Conclusion}
+
+This paper places Erie Gardens in the historical context of federal wartime
+housing and outlines its development from a housing project into a full
+constituent neighbourhood of Port Clinton with a strong resident advocacy base.
+Grassroots organising beginning in 1969 led to the increased awareness and
+interest at City Hall in improving infrastructural conditions in Erie Gardens.
+As noted, despite many achievements since that time, community building efforts
+in Erie Gardens/West End continue to this day. Finally, the historical map of
+Erie Gardens shows the layout and placenames from the wartime era. Suggestions
+for further inquiry include a comprehensive survey of Erie Gardens residential
+structures and an investigation into how socioeconomic conditions of Erie
+Gardens have varied over time.
 
 \printbibliography
 
