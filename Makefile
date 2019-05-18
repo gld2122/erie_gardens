@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: eg.pdf eg.md eg.html clean
+all: eg.pdf README.md eg.html clean
 
 eg.pdf: eg.tex ref.bib
 	xelatex eg.tex
@@ -8,8 +8,8 @@ eg.pdf: eg.tex ref.bib
 	xelatex eg.tex
 	xelatex eg.tex
 
-eg.md: eg.tex ref.bib
-	pandoc -o eg.md eg.tex
+README.md: eg.tex ref.bib
+	pandoc -o README.md eg.tex
 
 eg.html: eg.tex ref.bib
 	pandoc -s -o eg.html eg.tex
