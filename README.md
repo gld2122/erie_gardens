@@ -252,16 +252,16 @@ interactive map [@ott-auditor]. Also noted on my map parking area off
 Superior Court funded by the city in the 1970s in response to resident
 complaints [@eaton75].
 
+\centering
+![Modern street map of Erie Gardens (West End)
+[@osm]](images/newmap.png)
+
 The base vector data and current street map was imported from
 OpenStreetMap [@osm]. I manually added the historical names, buildings,
 and areas using QGIS [@qgis]. The raster background comes from the
 ArcGIS tile server.
 
 ![image](images/oldmap.png)
-
-\centering
-![Modern street map of Erie Gardens (West End)
-[@osm]](images/newmap.png)
 
 Conclusion
 ==========
